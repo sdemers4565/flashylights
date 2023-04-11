@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 43.5%;
+    left: 49.9%;
+    transition: all 0.3s;
+    background-color: #fff;
+    opacity: 60%;
+    animation: mymove 2s infinite;
+  }
+
+  @-webkit-keyframes mymove {
+    10% {
+      opacity: 60%
+    }
+    50%   {
+      transform: scale(3);
+      opacity: 0
+    }
+    100%   {
+      transform: scale(3);
+      opacity: 0
+    }
+  }
